@@ -1,9 +1,9 @@
 :root{
-    color: #7289DA;
-    display: flex;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
+  color: #7289DA;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p{
@@ -16,10 +16,11 @@ p{
 }
 
 li {
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	margin-top: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .title{
