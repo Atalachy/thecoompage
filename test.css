@@ -24,12 +24,12 @@ p{
 }
 
 img{
-  margin-left: 50vw;
-  transform: translate(-50%);
   border-radius: 10px;
-  width: 300px;
+  width: 400px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 50vw;
+  transform: translate(-50%);
 }
 
 .description{
