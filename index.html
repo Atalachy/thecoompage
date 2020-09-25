@@ -6,16 +6,30 @@
 <link rel="icon" href="./test.jpg">
 </head>
 <body>
+<audio name="Music">
+    <source src="coom.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio> 
 
 <header>
 <div class="dropdown">
     <button type="button" name="button" id="button" class="dropdown-button">Menu</button>
     <div id="DropdownContent" class="dropdown-content">
-        <label class="switch">
-            <input type="checkbox" name="checkbox">
-            <span class="slider"></span>
-        </label><br>
-        <label class="theme-text">Theme</label>
+        <li>
+            <label class="switch">
+                <input type="checkbox" name="checkbox">
+                <span class="slider"></span>
+            </label><br>
+            <label class="theme-text">Theme</label>
+        </li>
+        
+        <li>
+            <label class="switch">
+                <input type="checkbox" name="checkboxMusic">
+                <span class="slider"></span>
+            </label><br>
+            <label class="theme-text">Music</label>
+        </li>
     </div>
 </div>
 </header>
@@ -34,8 +48,11 @@
 <script>
   var checkbox = document.getElementsByName("checkbox")[0];
   var button = document.getElementsByName("button")[0];
+  var checkboxMusic = document.getElementsByName("checkboxMusic")[0];
+  var Music = document.getElementsByName("Music")[0];
   var open = false
   checkbox.onclick = function() {CheckBox()};
+  checkboxMusic.onclick = function() {CheckboxMusic()};
   button.onclick = function() {Button()};
   
   function CheckBox() {
@@ -53,6 +70,14 @@
       if(button.onclick){open = !open}
       if(open == true) { document.getElementById("DropdownContent").style.display = "flex";}
       else { document.getElementById("DropdownContent").style.display = "none";}
+  }
+
+  function CheckboxMusic(){
+    if(checkboxMusic.checked){
+        Music.play();
+    }else{
+        Music.pause();
+    }
   }
 </script>
 </body>
