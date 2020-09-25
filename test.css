@@ -23,6 +23,15 @@ p{
   font-size: 40px;
 }
 
+img{
+  margin-left: 50vw;
+  transform: translate(-50%);
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .description{
     font-size: 30px;
 }
