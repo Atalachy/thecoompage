@@ -33,12 +33,12 @@ img{
 }
 
 .description{
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .video{
-    border-radius: 10px;
-    margin-left: 50vw;
+  border-radius: 10px;
+  margin-left: 50vw;
   transform: translate(-50%);
 }
 
