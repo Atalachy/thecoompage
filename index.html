@@ -1,133 +1,200 @@
 <!DOCTYPE html>
+<!--
+     Im gonna add comments because this is basically a big fucking spaghetti code, even me, Atalachy, cant understand whats happening here sometimes.
+     This code is so fucking bad ffs.
+     Oh yeah if you dont understand the comments, dont worry, i dont understand them either
+     If you think there is too much comments or you want to change my stupid ass and not funny comments, do it, please, just do it
+     Have fun exploring my bad code
+-->
 <html>
 <head>
-    <link rel="stylesheet" href="test.css">
-<title>THE COOM PAGE</title>
-<link rel="icon" href="./test.jpg">
+    <link rel="stylesheet" href="test.css"> <!-- Wow CSS be like -->
+<title>THE COOM PAGE</title> <!-- This is title very good -->
+<link rel="icon" href="./test.jpg"> <!-- This is the icon of the page, why is it called test.jpg, dont ask me -->
+<script src="randomimages.js"></script> <!--Calls the random image script-->
 </head>
 <body>
 
-<audio name="MusicCZ" loop>
-    <source src="coom.mp3" type="audio/mpeg">
+<audio name="MusicCZ" loop> <!-- This is Music, Very cool music, this one is "Welcome to the coom zone" by OblivionFall After Dark, it loops too, thats pog-->
+    <source src="coom.mp3" type="audio/mpeg"> <!-- This is the source wow i cant read-->
     Your browser does not support the audio element.
 </audio>
 
-<audio name="MusicCT" loop>
+<audio name="MusicCT" loop> <!-- Music added by Starpelly, thank you Starpelly very cool, this one is "Heir To The Cum Throne" by OblivionFall After Dark-->
     <source src="throne.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-<audio name="MusicWL" loop>
+<audio name="MusicWL" loop> <!-- This one was also added by Starpelly, this one is "Your Cum Won't Last" by OblivionFall After Dark -->
     <source src="last.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-<header>
+<header> <!-- So this is the header very cool-->
+
+<!-- Dropdown menu -->
 <div class="dropdown">
 
+    <!-- Dropdown menu Button, when click it shows the checkbox things to change theme or play music -->
     <button type="button" name="button" id="button" class="dropdown-button">Menu</button>
 
-    <div id="DropdownContent" class="dropdown-content">
+    <div id="DropdownContent" class="dropdown-content"> <!-- This is the content of the dropdown menu -->
+
+        <hr id="Line"><!-- WOW A LINE, thats it, its a line. -->
+
+        <li style="display: flex; justify-content: center;"> <!-- What a boring label, but oh well it works-->
+            <labe>Theme</labe>
+        </li>
+
         <li>
-            <label class="switch">
-                <input type="checkbox" name="checkbox">
+            <label class="switch"> <!-- Oh look this is the switch that tells something idfk, it changes from white to black-->
+                <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
+                <input type="checkbox" name="checkboxDT">
                 <span class="slider"></span>
-            </label><br>
+            </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Dark Theme</label>
         </li>
 
         <li>
-            <label class="switch">
-                <input type="checkbox" name="checkbox2">
+            <label class="switch"> <!-- This one is pretty cool, it changes the background to the very funny meme of mutahar laughing, thanks Starpelly for this pog theme-->
+                <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
+                <input type="checkbox" name="checkboxEP">
                 <span class="slider"></span>
-            </label><br>
+            </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Epic Theme</label>
         </li>
 
+        <hr id="Line"> <!-- WOW another line, this is cool, i like it -->
+
+        <li style="display: flex; justify-content: center;"> <!-- Another boring ass Label -->
+            <labe>Music</labe>
+        </li>
+
         <li>
-            <label class="switch">
+            <label class="switch"> <!-- This switch plays music, it plays "Welcome to the coom zone"-->
+                <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
                 <input type="checkbox" name="checkboxMusicCZ">
                 <span class="slider"></span>
-            </label><br>
+            </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Cum Zone</label>
         </li>
 
         <li>
-            <label class="switch">
+            <label class="switch"> <!-- Starpelly did this one, it plays "Heir To The Cum Throne" -->
+                <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
                 <input type="checkbox" name="checkboxMusicCT">
                 <span class="slider"></span>
-            </label><br>
+            </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Cum Throne</label>
         </li>
 
         <li>
-            <label class="switch">
+            <label class="switch"> <!-- Also Starpelly, it plays "Your Cum Won't Last" -->
+                <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
                 <input type="checkbox" name="checkboxMusicWL">
                 <span class="slider"></span>
-            </label><br>
+            </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Cum Won't Last</label>
         </li>
+
+        <hr id="Line"> <!-- WOW IS THIS A FUCKING LINE, OMGGGGG -->
     </div>
+</div>
 </header>
 
-<p class="title" >COOM</p>
-<p class="subtitle" >WHYYYYY</p>
+<div class="Page-content"><!-- Imagine Having a dive just for the page content smh -->
 
-<p class="description">Mutahar love coom hmmm yes yes yes coom coom COOM</p>
-<img src="test.jpg" alt="Indian tech support">
-<p class="description">Mutahar Video Hmmm yes</p>
-<iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/ik8NvfQvgaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="rainbowTxt">
+<p class="title" >COOM</p> <!-- Big Coom thing Woah-->
+<p class="subtitle" >WHYYYYY</p> <!-- IDK dont ask me -->
 
+<p class="description">Mutahar love coom hmmm yes yes yes coom coom COOM</p> <!-- Yes mutahar be like-->
+<img id="myPicture" alt="Indian tech support"> <!-- indian tech support be like-->
+<p class="description">Mutahar Video Hmmm yes</p> <!-- Video hmmmm yes -->
+</div>
+<!-- Woah a video, did you know i just did this page cause i accidentally pressed the right click on a mutahar video and tried to use the embed fuction youtube has, yes this is the origin of this page, all because i was like "Oh yeah youtube lets you do embed things, let me try that" -->
+<iframe id="myVideo" class="video" width="1280" height="720" src="https://www.youtube.com/embed/ik8NvfQvgaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!-- Okay if you hate bad scripts and code that is literally a mental break down, dont look at this script, i literally threw up doing this, omfg this is so bad-->
 <script>
-  var checkbox = document.getElementsByName("checkbox")[0];
-  var checkbox2 = document.getElementsByName("checkbox2")[0];
-  var button = document.getElementsByName("button")[0];
-  var checkboxMusicCZ = document.getElementsByName("checkboxMusicCZ")[0];
-  var checkboxMusicCT = document.getElementsByName("checkboxMusicCT")[0];
-  var checkboxMusicWL = document.getElementsByName("checkboxMusicWL")[0];
-  var MusicCZ = document.getElementsByName("MusicCZ")[0];
-  var MusicCT = document.getElementsByName("MusicCT")[0];
-  var MusicWL = document.getElementsByName("MusicWL")[0];
-  var open = false
-  checkbox.onclick = function() {CheckBox()};
-  checkbox2.onclick = function() {CheckBox2()};
-  checkboxMusicCZ.onclick = function() {CheckboxMusicCZ()};
-  checkboxMusicCT.onclick = function() {CheckboxMusicCT()};
-  checkboxMusicWL.onclick = function() {CheckboxMusicWL()};
-  button.onclick = function() {Button()};
+  /*----------- CHECKBOX AND BUTTONS -------------------*/
+  var checkboxDT = document.getElementsByName("checkboxDT")[0]; // I think this gets the checkbox of the dark theme, idk i guess thats it
+  var checkboxEP = document.getElementsByName("checkboxEP")[0]; // This one gets the Epic theme by Starpelly
+  var button = document.getElementsByName("button")[0]; //This one is for the button for the menu, basically to open the fucking dropdown menu and shit
+  /*----- Thanks Starpelly for organizing this --------*/
+  var checkboxMusicCZ = document.getElementsByName("checkboxMusicCZ")[0]; // This one gets the checkbox of the cum zone music and turns it into a var so i can use it in the script
+  var checkboxMusicCT = document.getElementsByName("checkboxMusicCT")[0]; // This one gets the checkbox of the Cum Throne music
+  var checkboxMusicWL = document.getElementsByName("checkboxMusicWL")[0]; // And this one the checkbox of the Cum wont last music
+  /*----- Var of Music, gets the music basically -------*/
+  var MusicCZ = document.getElementsByName("MusicCZ")[0]; //This gets the actual music, this is the Cum zone
+  var MusicCT = document.getElementsByName("MusicCT")[0]; //This one is the Cum Throne
+  var MusicWL = document.getElementsByName("MusicWL")[0]; //And this last one is Cum wont last
 
-  function CheckBox() {
-      if(checkbox.checked) { document.body.style.backgroundColor = "#2C2F33";
-      document.body.style.color = "white";
-      document.getElementById("DropdownContent").style.backgroundColor = "#2C2F33";
-      document.getElementById("button").style.color = "white";}
-      else {document.body.style.backgroundColor = "white";
-      document.body.style.color = "#7289DA";
-      document.getElementById("DropdownContent").style.backgroundColor = "white";
-      document.getElementById("button").style.color = "#7289DA";}
+  /*----- I dont know help ---------*/
+  var open = false //I dont fucking know why i had this, but its here, dont touch, i dont know what happens if you touch it
+  var sImage = document.getElementById("myPicture");
+  var sVideo = document.getElementById("myVideo");
+  var rText = document.getElementById("rainbowTxt");
+
+  /*----- On click stuff, when i click something happens, thats code pog ---------*/
+  checkboxDT.onclick = function() {CheckBoxDT()}; //When first check box is clicked it gets the CheckBox function (Dark Theme)
+  checkboxEP.onclick = function() {CheckBoxEP()}; //Epic Theme check box, gets Function to change to Epic Theme
+  checkboxMusicCZ.onclick = function() {CheckboxMusicCZ()}; //Gets the CheckBox music Function and plays or stops the Cum zone music
+  checkboxMusicCT.onclick = function() {CheckboxMusicCT()}; //Same thing here, but with the Cum Throne music
+  checkboxMusicWL.onclick = function() {CheckboxMusicWL()}; //And this one cooks for me, nah jk it plays Cum wont last
+  button.onclick = function() {Button()}; //Button be like, opens Dropdown menu
+
+  /*//------FUNCTIONS------//*/
+
+  /*-----------DARK THEME FUNCTION -------------*/
+  function CheckBoxDT() {
+      //Dark Theme Function, when checkbox is checked it changes, background color to discord's "Dark, but not black" (#2C2F33) and the text color to white
+      if(checkboxDT.checked){ document.body.style.backgroundColor = "#2C2F33";
+        document.body.style.color = "white";
+        document.getElementById("DropdownContent").style.backgroundColor = "#2C2F33";
+        document.getElementById("button").style.color = "white";
+        document.getElementById("Line1").style.color = "#7289DA";
+      }else{
+        //When checkbox is unchecked, turns everything to normal, background color to white and text color to discord's Blurple (#7289DA)
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "#7289DA";
+        document.getElementById("DropdownContent").style.backgroundColor = "white";
+        document.getElementById("button").style.color = "#7289DA";
+        document.getElementById("Line").style.color = "#99AAB5";
+      }
   }
 
-  function CheckBox2() {
-      if(checkbox2.checked) {
+  /*------------------- EPIC THEME FUNCTION ---------------------*/
+  function CheckBoxEP() {
+      //When checked changes background to laugh.jpg
+      if(checkboxEP.checked) {
       document.body.style.backgroundImage = "url('laugh.jpg')";
-      document.body.style.color = "white";
-      document.getElementById("DropdownContent").style.backgroundColor = "#2C2F33";
-      document.getElementById("button").style.color = "white";}
+      sImage.classList.add("shake");
+      sVideo.classList.add("shake");
+      rText.classList.add("rainbow-text");
+      }
+      //when unchecked, goes back to normal
       else {
       document.body.style.backgroundImage = "";
-      document.body.style.color = "#7289DA";
-      document.getElementById("DropdownContent").style.backgroundColor = "white";
-      document.getElementById("button").style.color = "#7289DA";}
+      sImage.classList.remove("shake");
+      sVideo.classList.remove("shake");
+      rText.classList.remove("rainbow-text");
+      }
   }
 
+  /*------------------- DROPDOWN MENU BUTTON FUNCTION ----------------------*/
   function Button() {
-      if(button.onclick){open = !open}
+      //Opens Drop down menu
+      if(button.onclick){open = !open} //Ok found where open is used, when you click the button it turns open into True, when clicked again turns into False
+      //IF its true changes the DropdownContent display to flex, and so it shows the content, if its false changes the display to none, so basically closes the dropdown menu
       if(open == true) { document.getElementById("DropdownContent").style.display = "flex";}
       else { document.getElementById("DropdownContent").style.display = "none";}
   }
 
+  /*------------------ MUSIC CHECKBOX FUNCTION ------------------------*/
   function CheckboxMusicCZ(){
+    //Plays The Cum zone, and now it doesnt stop the other music, so its more chaos
+    //Tried doing like stopping all music, but because it doesnt uncheck the music checkbox it looked weird, oh well, more chaos, more fun
     if(checkboxMusicCZ.checked){
         MusicCZ.play();
     }else{
@@ -136,6 +203,7 @@
   }
 
   function CheckboxMusicCT(){
+      //Plays Cum throne
     if(checkboxMusicCT.checked){
         MusicCT.play();
     }else{
@@ -144,6 +212,7 @@
   }
 
   function CheckboxMusicWL(){
+      //Plays Cum Wont Last
     if(checkboxMusicWL.checked){
         MusicWL.play();
     }else{
@@ -151,7 +220,9 @@
     }
   }
 
+  /*------ WOW ITS THE END OF THE SCRIPT THANK GOD ---------*/
 </script>
+<!-- END OF THE BAD FUCKING SCRIPT, ITS SO BAD OMG -->
 </div>
 </body>
 </html>
