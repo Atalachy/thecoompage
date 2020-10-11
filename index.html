@@ -178,34 +178,28 @@
 
   /*------------------ MUSIC CHECKBOX FUNCTION ------------------------*/
   function CheckboxMusicCZ(){
-    //Plays The Cum zone, and stops all the other music
-    //Because im a pro at programming, it doesnt unchecked the other check boxs, pls help, idk how to do that
+    //Plays The Cum zone, and now it doesnt stop the other music, so its more chaos
+    //Tried doing like stopping all music, but because it doesnt uncheck the music checkbox it looked weird, oh well, more chaos, more fun
     if(checkboxMusicCZ.checked){
         MusicCZ.play();
-        MusicCT.pause();
-        MusicWL.pause();
     }else{
         MusicCZ.pause();
     }
   }
 
   function CheckboxMusicCT(){
-      //Plays Cum throne, and stops all the other music
+      //Plays Cum throne
     if(checkboxMusicCT.checked){
         MusicCT.play();
-        MusicCZ.pause();
-        MusicWL.pause();
     }else{
         MusicCT.pause();
     }
   }
 
   function CheckboxMusicWL(){
-      //Plays Cum Wont Last, and stops all the other music
+      //Plays Cum Wont Last
     if(checkboxMusicWL.checked){
         MusicWL.play();
-        MusicCZ.pause();
-        MusicCT.pause();
     }else{
         MusicWL.pause();
     }
