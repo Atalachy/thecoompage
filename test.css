@@ -1,3 +1,5 @@
+html { overflow:hidden; }
+
 :root{
   color: #7289DA;
   display: flex;
@@ -38,6 +40,7 @@ img{
   width: 300px;
   margin-top: 20px;
   margin-bottom: 20px;
+
 }
 
 .description{
@@ -60,9 +63,9 @@ img{
   width: 60px;
   height: 34px;
 }
-  
+
 .switch input {display:none;}
-  
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -75,7 +78,7 @@ img{
   -webkit-transition: .4s;
   transition: .4s;
 }
-  
+
 .slider:before {
   position: absolute;
   content: "";
@@ -88,15 +91,15 @@ img{
   -webkit-transition: .4s;
   transition: .4s;
 }
-  
+
 input:checked + .slider {
   background-color: #2196F3;
 }
-  
+
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
-  
+
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -106,15 +109,15 @@ input:checked + .slider:before {
 .dropdown {
   position: relative;
   display: inline-block;
-    
+
 }
-  
+
 .dropdown-content {
   display: none;
   flex-direction: column;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -131,7 +134,7 @@ input:checked + .slider:before {
     transform: scaleY(1)
    }
 }
-  
+
 .dropdown-button{
   display:inline-block;
   padding:0.35em 1.2em;
@@ -152,8 +155,38 @@ input:checked + .slider:before {
   cursor: pointer;
   background-color: #c6d2dc;
 }
-  
+
 body {
   background-color: white;
   transition: all 0.2s;
+
+  animation-name: scrollingbg;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+a{
+    color:yellow;
+}
+.bar-wrapper {
+    height: 300px;
+    position: relative;
+}
+.bar {
+    position: relative;
+    bottom: 0;
+    width: 5px;
+    display: inline-block;
+    border: 1px solid red;
+    height: 5px;
+    border-bottom: 3px solid #fff;
+}
+
+@keyframes scrollingbg {
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: -512px -512px;
+	}
 }
