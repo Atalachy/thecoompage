@@ -7,56 +7,96 @@
 </head>
 <body>
 
-<audio name="Music" loop>
+<audio name="MusicCZ" loop>
     <source src="coom.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-</audio> 
+</audio>
+
+<audio name="MusicCT" loop>
+    <source src="throne.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio name="MusicWL" loop>
+    <source src="last.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <header>
 <div class="dropdown">
 
     <button type="button" name="button" id="button" class="dropdown-button">Menu</button>
-    
+
     <div id="DropdownContent" class="dropdown-content">
         <li>
             <label class="switch">
                 <input type="checkbox" name="checkbox">
                 <span class="slider"></span>
             </label><br>
-            <label class="theme-text">Theme</label>
+            <label class="theme-text">Dark Theme</label>
         </li>
-        
+
         <li>
             <label class="switch">
-                <input type="checkbox" name="checkboxMusic">
+                <input type="checkbox" name="checkbox2">
                 <span class="slider"></span>
             </label><br>
-            <label class="theme-text">Music</label>
+            <label class="theme-text">Epic Theme</label>
+        </li>
+
+        <li>
+            <label class="switch">
+                <input type="checkbox" name="checkboxMusicCZ">
+                <span class="slider"></span>
+            </label><br>
+            <label class="theme-text">Cum Zone</label>
+        </li>
+
+        <li>
+            <label class="switch">
+                <input type="checkbox" name="checkboxMusicCT">
+                <span class="slider"></span>
+            </label><br>
+            <label class="theme-text">Cum Throne</label>
+        </li>
+
+        <li>
+            <label class="switch">
+                <input type="checkbox" name="checkboxMusicWL">
+                <span class="slider"></span>
+            </label><br>
+            <label class="theme-text">Cum Won't Last</label>
         </li>
     </div>
-
-</div>
 </header>
 
 <p class="title" >COOM</p>
 <p class="subtitle" >WHYYYYY</p>
 
 <p class="description">Mutahar love coom hmmm yes yes yes coom coom COOM</p>
-<img src="test.jpg" alt="Indian tech support"> 
+<img src="test.jpg" alt="Indian tech support">
 <p class="description">Mutahar Video Hmmm yes</p>
 <iframe class="video" width="1280" height="720" src="https://www.youtube.com/embed/ik8NvfQvgaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  
+
 <script>
   var checkbox = document.getElementsByName("checkbox")[0];
+  var checkbox2 = document.getElementsByName("checkbox2")[0];
   var button = document.getElementsByName("button")[0];
-  var checkboxMusic = document.getElementsByName("checkboxMusic")[0];
-  var Music = document.getElementsByName("Music")[0];
+  var checkboxMusicCZ = document.getElementsByName("checkboxMusicCZ")[0];
+  var checkboxMusicCT = document.getElementsByName("checkboxMusicCT")[0];
+  var checkboxMusicWL = document.getElementsByName("checkboxMusicWL")[0];
+  var MusicCZ = document.getElementsByName("MusicCZ")[0];
+  var MusicCT = document.getElementsByName("MusicCT")[0];
+  var MusicWL = document.getElementsByName("MusicWL")[0];
   var open = false
   checkbox.onclick = function() {CheckBox()};
-  checkboxMusic.onclick = function() {CheckboxMusic()};
+  checkbox2.onclick = function() {CheckBox2()};
+  checkboxMusicCZ.onclick = function() {CheckboxMusicCZ()};
+  checkboxMusicCT.onclick = function() {CheckboxMusicCT()};
+  checkboxMusicWL.onclick = function() {CheckboxMusicWL()};
   button.onclick = function() {Button()};
-  
+
   function CheckBox() {
       if(checkbox.checked) { document.body.style.backgroundColor = "#2C2F33";
       document.body.style.color = "white";
@@ -68,20 +108,50 @@
       document.getElementById("button").style.color = "#7289DA";}
   }
 
+  function CheckBox2() {
+      if(checkbox2.checked) {
+      document.body.style.backgroundImage = "url('laugh.jpg')";
+      document.body.style.color = "white";
+      document.getElementById("DropdownContent").style.backgroundColor = "#2C2F33";
+      document.getElementById("button").style.color = "white";}
+      else {
+      document.body.style.backgroundImage = "";
+      document.body.style.color = "#7289DA";
+      document.getElementById("DropdownContent").style.backgroundColor = "white";
+      document.getElementById("button").style.color = "#7289DA";}
+  }
+
   function Button() {
       if(button.onclick){open = !open}
       if(open == true) { document.getElementById("DropdownContent").style.display = "flex";}
       else { document.getElementById("DropdownContent").style.display = "none";}
   }
 
-  function CheckboxMusic(){
-    if(checkboxMusic.checked){
-        Music.play();
+  function CheckboxMusicCZ(){
+    if(checkboxMusicCZ.checked){
+        MusicCZ.play();
     }else{
-        Music.pause();
+        MusicCZ.pause();
     }
   }
-</script>
 
+  function CheckboxMusicCT(){
+    if(checkboxMusicCT.checked){
+        MusicCT.play();
+    }else{
+        MusicCT.pause();
+    }
+  }
+
+  function CheckboxMusicWL(){
+    if(checkboxMusicWL.checked){
+        MusicWL.play();
+    }else{
+        MusicWL.pause();
+    }
+  }
+
+</script>
+</div>
 </body>
-</html> 
+</html>
