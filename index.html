@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="test.css"> <!-- Wow CSS be like -->
 <title>THE COOM PAGE</title> <!-- This is title very good -->
 <link rel="icon" href="./test.jpg"> <!-- This is the icon of the page, why is it called test.jpg, dont ask me -->
+
 <script src="randomimages.js"></script> <!--Calls the random image script-->
 </head>
 <body>
@@ -40,7 +41,7 @@
 
     <div id="DropdownContent" class="dropdown-content"> <!-- This is the content of the dropdown menu -->
 
-        <hr id="Line"><!-- WOW A LINE, thats it, its a line. -->
+        <hr class="line"><!-- WOW A LINE, thats it, its a line. -->
 
         <li style="display: flex; justify-content: center;"> <!-- What a boring label, but oh well it works-->
             <labe>Theme</labe>
@@ -49,7 +50,9 @@
         <li>
             <label class="switch"> <!-- Oh look this is the switch that tells something idfk, it changes from white to black-->
                 <!-- Checkbox thing, idk i stole this code from stack overflow, it works so yes-->
+
                 <input type="checkbox" name="checkboxDT">
+
                 <span class="slider"></span>
             </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Dark Theme</label>
@@ -63,8 +66,8 @@
             </label><br> <!-- End of Checkbox code -->
             <label class="theme-text">Epic Theme</label>
         </li>
-
-        <hr id="Line"> <!-- WOW another line, this is cool, i like it -->
+      
+        <hr class="line"> <!-- WOW another line, this is cool, i like it -->
 
         <li style="display: flex; justify-content: center;"> <!-- Another boring ass Label -->
             <labe>Music</labe>
@@ -97,7 +100,7 @@
             <label class="theme-text">Cum Won't Last</label>
         </li>
 
-        <hr id="Line"> <!-- WOW IS THIS A FUCKING LINE, OMGGGGG -->
+        <hr class="line"> <!-- WOW IS THIS A FUCKING LINE, OMGGGGG -->
     </div>
 </div>
 </header>
@@ -153,18 +156,24 @@
         document.body.style.color = "white";
         document.getElementById("DropdownContent").style.backgroundColor = "#2C2F33";
         document.getElementById("button").style.color = "white";
-        document.getElementById("Line1").style.color = "#7289DA";
+        for (let i = 0; i<document.getElementsByClassName("line").length;++i){
+          document.getElementsByClassName("line")[i].style.color = "#7289DA";
+        }
       }else{
         //When checkbox is unchecked, turns everything to normal, background color to white and text color to discord's Blurple (#7289DA)
         document.body.style.backgroundColor = "white";
         document.body.style.color = "#7289DA";
         document.getElementById("DropdownContent").style.backgroundColor = "white";
         document.getElementById("button").style.color = "#7289DA";
-        document.getElementById("Line").style.color = "#99AAB5";
+        
+        for (let i = 0; i<document.getElementsByClassName("line").length;++i){
+          document.getElementsByClassName("line")[i].style.color = "#99AAB5";
+        }
       }
   }
 
   /*------------------- EPIC THEME FUNCTION ---------------------*/
+
   function CheckBoxEP() {
       //When checked changes background to laugh.jpg
       if(checkboxEP.checked) {
